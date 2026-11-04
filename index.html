@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090909"><title>MovieHub – Xem phim trực tuyến</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="/">MOVIE<span>HUB</span></a><nav><a href="#home">Trang chủ</a><a href="#movies">Phim</a><a href="#series">Phim bộ</a></nav><div class="top-actions"><input id="search" placeholder="Tìm phim..." aria-label="Tìm phim"><button id="adminOpen" class="outline">Quản trị</button></div></header>
+<main id="home">
+<section class="hero"><div class="hero-content"><p class="eyebrow">THẾ GIỚI GIẢI TRÍ TRONG TẦM TAY</p><h1>PHIM HAY.<br><span>TRẢI NGHIỆM ĐỈNH.</span></h1><p class="hero-copy">Khám phá những bộ phim và series quốc tế nổi bật.</p><div class="hero-buttons"><a class="primary" href="#movies">Khám phá ngay</a><a class="secondary" href="#movies">⌄　Xem danh sách</a></div></div><div class="hero-shade"></div></section>
+<section class="content" id="movies"><div class="section-head"><div><p class="eyebrow">ĐƯỢC TUYỂN CHỌN</p><h2>Phim nổi bật</h2></div><span class="muted" id="count"></span></div><div id="featured" class="movie-grid"></div>
+<div class="section-head"><div><p class="eyebrow">KHÁM PHÁ</p><h2>Tất cả phim</h2></div><select id="genre"><option value="">Tất cả thể loại</option><option>Hành động</option><option>Tình cảm</option><option>Khoa học viễn tưởng</option><option>Hoạt hình</option><option>Chính kịch</option><option>Kỳ bí</option><option>Giật gân</option><option>Kinh dị</option></select></div><div id="allMovies" class="movie-grid"></div>
+</section></main>
+<footer><a class="brand" href="/">MOVIE<span>HUB</span></a><p>MovieHub là nền tảng quản lý và khám phá nội dung giải trí. Chỉ phát nội dung bạn có quyền phân phối.</p><small>© 2026 MovieHub</small></footer>
+<div id="detail" class="modal"><div class="modal-card detail-card"><button class="close" data-close="detail">×</button><div id="detailBody"></div></div></div>
+<div id="admin" class="modal"><div class="modal-card admin-card"><button class="close" data-close="admin">×</button><div id="adminBody"></div></div></div>
+<script src="/app.js"></script></body></html>
